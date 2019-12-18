@@ -1,0 +1,19 @@
+.paged-list {
+  --shadowColor: rgba(0, 0, 0, 0.4);
+  --lightColor: rgba(255, 255, 255, 0.4);
+  --margin-size: 1rem;
+
+  background-color: white;
+  border-top-color: var(--shadowColor);
+  border-right-color: var(--shadowColor);
+  border-left-color: var(--lightColor);
+  border-bottom-color: var(--lightColor);
+  border-style: solid;
+  border-width: 0.3rem;
+  margin: 0 var(--margin-size);
+  background-clip: padding-box;
+  overflow-y: scroll;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}

@@ -1,0 +1,12 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  font-family: "MagicMedieval";
+  font-size: 1.3rem;
+  color: white;
+  text-shadow: 0.1rem 0.1rem black;
+  margin: 0.5rem 1rem;
+
+  & .count {
+  }
+}

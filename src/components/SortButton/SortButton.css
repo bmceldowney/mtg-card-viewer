@@ -1,0 +1,18 @@
+.sort-button {
+  width: 2rem;
+  height: 2rem;
+  background-image: url("../../images/sort_reverse.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin-right: 1rem;
+}
+
+.sort-selector {
+  display: flex;
+  flex-direction: column;
+
+  & .sort-field {
+    margin: 0.25rem 0;
+  }
+}

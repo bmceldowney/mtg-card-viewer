@@ -1,0 +1,63 @@
+.header {
+  --loading-indicator-size: 2rem;
+
+  font-family: "MagicMedieval";
+  text-align: start;
+  padding: 0.75rem 0;
+  margin: 0 1rem;
+  font-size: 2rem;
+  text-shadow: 0.1rem 0.1rem black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-self: flex-start;
+
+  & .widgets {
+    display: flex;
+  }
+
+  & .loading-indicator {
+    width: var(--loading-indicator-size);
+    height: var(--loading-indicator-size);
+
+    & div {
+      display: none;
+      width: var(--loading-indicator-size);
+      height: var(--loading-indicator-size);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      animation: spin 1s linear infinite;
+    }
+  }
+}
+
+.header.loading {
+  & .loading-indicator div {
+    display: block;
+  }
+}
+
+.app.white {
+  & .header {
+    & .loading-indicator {
+      & div {
+        background-image: url("../../images/loading_spinner.png");
+      }
+    }
+  }
+}
+.app.red .header {
+  & .loading-indicator {
+    & div {
+      background-image: url("../../images/red_loading_spinner.png");
+    }
+  }
+}
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}

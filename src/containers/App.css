@@ -1,0 +1,23 @@
+.app {
+  margin: auto;
+  max-width: 960px;
+  background-image: url("../images/red_magic_background.png");
+  background-size: cover;
+  border-radius: 1rem;
+  border: black solid 1rem;
+  height: 96%;
+  display: grid;
+}
+
+/* TODO: Add additional themes */
+.app.white {
+  background-image: url("../images/white_magic_background.png");
+}
+
+.app.green {
+  background-image: url("../images/green_magic_background.png");
+}
+
+.app.red {
+  background-image: url("../images/red_magic_background.png");
+}

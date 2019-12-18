@@ -1,0 +1,117 @@
+.card {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 310px;
+  width: 223px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 12px;
+  border: 1px black solid;
+
+  & .image {
+    height: 310px;
+    width: 223px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  & .title {
+    font-family: "MPlantin-Bold";
+  }
+
+  & .original-type {
+    font-size: var(--font-medium);
+  }
+
+  & .set-name {
+    font-size: var(--font-small);
+  }
+
+  & .artist {
+    font-size: var(--font-medium);
+  }
+
+  & .no-image-text {
+    font-family: "MagicMedieval";
+    font-size: 1.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  & .first {
+    margin-top: 1rem;
+  }
+
+  &.placeholder {
+    border: none;
+  }
+}
+
+.front {
+  & .card {
+    border: none;
+  }
+}
+
+.back {
+  & .card {
+    border: 1px black solid;
+
+    & > span {
+      text-align: center;
+      margin-bottom: 0.5rem;
+    }
+  }
+}
+
+/* Flipping */
+/* entire container, keeps perspective */
+.flip-container {
+  perspective: 1000px;
+  margin: 0.2rem;
+}
+/* flip the pane when hovered */
+.flip-container:hover .flipper,
+.flip-container.hover .flipper {
+  transition: transform 0.25s ease-out;
+  transform: rotateY(180deg);
+}
+
+.flip-container,
+.front,
+.back {
+  height: 310px;
+  width: 223px;
+}
+
+/* flip speed goes here */
+.flipper {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+
+  position: relative;
+}
+
+/* hide back of pane during swap */
+.front,
+.back {
+  transition: transform 0.25s ease-out;
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+  z-index: 2;
+  /* for firefox 31 */
+  transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+  transform: rotateY(180deg);
+}
