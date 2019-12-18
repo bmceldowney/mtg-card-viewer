@@ -5,8 +5,15 @@ import {
   pageLoaded
 } from "./appActions";
 
+// queue added last minute to cut down on duplicate requests
+// I think this might be the culprit behind the search bug
+// that breaks scroll loading
 const requestQueue = [];
 
+/**
+ * The action used to fetch cards from the API
+ * @param {Integer} pageNumber - the number of the page to be loaded
+ */
 function fetchCards(pageNumber) {
   return dispatch => {
     if (requestQueue.length) {
@@ -17,10 +24,6 @@ function fetchCards(pageNumber) {
   };
 }
 
-/**
- * The action used to fetch cards from the API
- * @param {Integer} pageNumber - the number of the page to be loaded
- */
 function fetchCardsInternal(pageNumber = 1) {
   return (dispatch, getState) => {
     const {
@@ -31,10 +34,10 @@ function fetchCardsInternal(pageNumber = 1) {
     const baseUrl = "https://api.magicthegathering.io";
     const path = "v1/cards";
     const url = new URL(path, baseUrl);
+
     url.searchParams.set("pageSize", pageSize);
     url.searchParams.set("page", pageNumber);
     url.searchParams.set("type", "Creature");
-
     url.searchParams.set("orderBy", sortField);
 
     Object.keys(currentSearchCriteria).forEach(key => {
