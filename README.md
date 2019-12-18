@@ -1,5 +1,7 @@
 # M:tG Card Viewer
 
+It's here! https://bmceldowney.github.io/mtg-card-viewer/
+
 ### Tech:
 
 - React (via create-react-app (see below for more info))
