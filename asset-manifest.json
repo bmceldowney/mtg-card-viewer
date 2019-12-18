@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/myapp/static/css/main.5c728660.chunk.css",
-    "main.js": "/myapp/static/js/main.4296d680.chunk.js",
-    "main.js.map": "/myapp/static/js/main.4296d680.chunk.js.map",
-    "runtime-main.js": "/myapp/static/js/runtime-main.0f287211.js",
-    "runtime-main.js.map": "/myapp/static/js/runtime-main.0f287211.js.map",
-    "static/css/2.bfd9c2b6.chunk.css": "/myapp/static/css/2.bfd9c2b6.chunk.css",
-    "static/js/2.fd78bcf8.chunk.js": "/myapp/static/js/2.fd78bcf8.chunk.js",
-    "static/js/2.fd78bcf8.chunk.js.map": "/myapp/static/js/2.fd78bcf8.chunk.js.map",
-    "index.html": "/myapp/index.html",
-    "precache-manifest.448b047c187fad3115a52073a277fbfd.js": "/myapp/precache-manifest.448b047c187fad3115a52073a277fbfd.js",
-    "service-worker.js": "/myapp/service-worker.js",
-    "static/css/2.bfd9c2b6.chunk.css.map": "/myapp/static/css/2.bfd9c2b6.chunk.css.map",
-    "static/css/main.5c728660.chunk.css.map": "/myapp/static/css/main.5c728660.chunk.css.map",
-    "static/js/2.fd78bcf8.chunk.js.LICENSE": "/myapp/static/js/2.fd78bcf8.chunk.js.LICENSE",
-    "static/media/index.css": "/myapp/static/media/MagicMedieval.a3c809de.woff2",
-    "static/media/App.css": "/myapp/static/media/white_magic_background.7249fe35.png",
-    "static/media/Header.css": "/myapp/static/media/red_loading_spinner.4cce9692.png"
+    "main.css": "/mtg-card-viewer/static/css/main.88f82ea3.chunk.css",
+    "main.js": "/mtg-card-viewer/static/js/main.4296d680.chunk.js",
+    "main.js.map": "/mtg-card-viewer/static/js/main.4296d680.chunk.js.map",
+    "runtime-main.js": "/mtg-card-viewer/static/js/runtime-main.fa563ee9.js",
+    "runtime-main.js.map": "/mtg-card-viewer/static/js/runtime-main.fa563ee9.js.map",
+    "static/css/2.bfd9c2b6.chunk.css": "/mtg-card-viewer/static/css/2.bfd9c2b6.chunk.css",
+    "static/js/2.fd78bcf8.chunk.js": "/mtg-card-viewer/static/js/2.fd78bcf8.chunk.js",
+    "static/js/2.fd78bcf8.chunk.js.map": "/mtg-card-viewer/static/js/2.fd78bcf8.chunk.js.map",
+    "index.html": "/mtg-card-viewer/index.html",
+    "precache-manifest.93fb1c9de1757fff68de9059ce929794.js": "/mtg-card-viewer/precache-manifest.93fb1c9de1757fff68de9059ce929794.js",
+    "service-worker.js": "/mtg-card-viewer/service-worker.js",
+    "static/css/2.bfd9c2b6.chunk.css.map": "/mtg-card-viewer/static/css/2.bfd9c2b6.chunk.css.map",
+    "static/css/main.88f82ea3.chunk.css.map": "/mtg-card-viewer/static/css/main.88f82ea3.chunk.css.map",
+    "static/js/2.fd78bcf8.chunk.js.LICENSE": "/mtg-card-viewer/static/js/2.fd78bcf8.chunk.js.LICENSE",
+    "static/media/index.css": "/mtg-card-viewer/static/media/MagicMedieval.a3c809de.woff2",
+    "static/media/App.css": "/mtg-card-viewer/static/media/white_magic_background.7249fe35.png",
+    "static/media/Header.css": "/mtg-card-viewer/static/media/red_loading_spinner.4cce9692.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.0f287211.js",
+    "static/js/runtime-main.fa563ee9.js",
     "static/css/2.bfd9c2b6.chunk.css",
     "static/js/2.fd78bcf8.chunk.js",
-    "static/css/main.5c728660.chunk.css",
+    "static/css/main.88f82ea3.chunk.css",
     "static/js/main.4296d680.chunk.js"
   ]
 }
